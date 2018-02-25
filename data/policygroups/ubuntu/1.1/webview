@@ -161,6 +161,8 @@
     # databases
     owner @{HOME}/.local/share/@{APP_PKGNAME}/   rw,
     owner @{HOME}/.local/share/@{APP_PKGNAME}/** mrwkl,
+    owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/   rw,
+    owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/** mrwkl,
 
     # LP: #1260103
     # old oxide shm file which is not app-specific

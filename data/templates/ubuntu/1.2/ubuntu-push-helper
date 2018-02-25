@@ -83,6 +83,8 @@
   owner @{HOME}/.config/@{APP_PKGNAME}/**               mrwkl,
   owner @{HOME}/.local/share/@{APP_PKGNAME}/            rw,      # subdir of XDG_DATA_HOME
   owner @{HOME}/.local/share/@{APP_PKGNAME}/**          mrwklix,
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/            rw,      # subdir of XDG_DATA_HOME
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/**          mrwklix,
   owner /{,var/}run/user/*/@{APP_PKGNAME}/              rw,      # subdir of XDG_RUNTIME_DIR
   owner /{,var/}run/user/*/@{APP_PKGNAME}/**            mrwkl,
   owner /{,var/}run/user/*/confined/@{APP_PKGNAME}/     rw,      # subdir of XDG_RUNTIME_DIR (for TMPDIR)

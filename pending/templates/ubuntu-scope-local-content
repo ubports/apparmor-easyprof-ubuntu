@@ -104,6 +104,11 @@
   # app access to all files allowed by this template, thus escaping
   # confinement.
   audit deny @{HOME}/.local/share/@{APP_PKGNAME}/** w,
+  
+  # Same as above, but for qt5.9
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/ r,
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/** mrkl,
+  audit deny @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/** w,
 
   # Public endpoints
   # all scopes should be able to access the reply endpoints (the scopes-api

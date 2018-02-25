@@ -106,6 +106,11 @@
   # templates have limited filesystem access, so this could be carefully
   # loosened in the future.
   audit deny @{HOME}/.local/share/@{APP_PKGNAME}/** w,
+  
+  # Same as above for qt5.9
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/ r,
+  owner @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/** mrkl,
+  audit deny @{HOME}/.local/share/QtProject/@{APP_PKGNAME}/** w,
 
   # Public endpoints
   # all scopes should be able to access the reply endpoints (the scopes-api
