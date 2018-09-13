@@ -24,12 +24,16 @@
   #  /android/vendor/lib{,64}
   #  /android/system/lib{,64}
   #  /android/system/vendor/lib{,64}
+  #  /odm/lib{,64}
+  #  /android/odm/lib{,64}/
   /{,android/}vendor/lib{,64}/**           r,
   /{,android/}vendor/lib{,64}/**.so        m,
   /{,android/}system/lib{,64}/**           r,
   /{,android/}system/lib{,64}/**.so        m,
   /{,android/}system/vendor/lib{,64}/**    r,
   /{,android/}system/vendor/lib{,64}/**.so m,
+  /{,android/}odm/lib{,64}/**    r,
+  /{,android/}odm/lib{,64}/**.so m,
 
   # attach_disconnected path
   /dev/socket/property_service rw,
