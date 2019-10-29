@@ -124,7 +124,7 @@
     /{,android/}system/vendor/lib{,64}/*.so mr,
     /{,android/}odm/lib{,64}/*.so mr,
     /{,android/}system/build.prop      r,
-    /{dev/,}socket/property_service rw, # attach_disconnected path
+    /{,dev/}socket/property_service rw, # attach_disconnected path
 
     @{PROC}/ r,
     @{PROC}/[0-9]*/ r,

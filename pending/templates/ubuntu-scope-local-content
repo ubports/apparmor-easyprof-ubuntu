@@ -36,7 +36,7 @@
   /{,android/}odm/lib{,64}/**.so m,
 
   # attach_disconnected path
-  /{dev/,}socket/property_service rw,
+  /{,dev/}socket/property_service rw,
 
   # Add to abstractions?
   @{PROC}/sys/net/core/somaxconn r,
