@@ -435,6 +435,7 @@
   deny @{HOME}/orcexec* w,
 
   /{,android/}system/etc/media_codecs{,_*}.xml r,
+  /{,android/}vendor/etc/media_codecs{,_*}.xml r,
   /etc/wildmidi/wildmidi.cfg r,
 
   # system user scripts
