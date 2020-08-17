@@ -432,6 +432,12 @@
   /usr/lib/@{multiarch}/qt5/qml/**/*.qmlc m,
 
   #
+  # Applications can always try to load Qt's translations
+  #
+  /usr/share/qt5/translations/ r,
+  /usr/share/qt5/translations/** r,
+
+  #
   # cordova-ubuntu
   #
   /usr/share/cordova-ubuntu*/      r,
