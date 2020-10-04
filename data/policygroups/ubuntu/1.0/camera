@@ -32,3 +32,11 @@ dbus (receive, send)
      bus=session
      path=/core/ubuntu/media/Service{,/**}
      peer=(label="{unconfined,/usr/bin/media-hub-server}"),
+
+# Allow access to sensorfw (same as in sensors profile, needed for orientation)
+dbus (send)
+     bus=system
+     interface=local.*
+     peer=(name=com.nokia.SensorService, label=unconfined),
+
+/run/sensord.sock rw,
