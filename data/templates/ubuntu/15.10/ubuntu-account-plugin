@@ -42,6 +42,11 @@
   # services aren't a secret.
   #include <abstractions/dbus-strict>
 
+  # If apps are reading system library or Qt cache files, they will likely need
+  # to execute them as well.
+  /lib/**.{so,jsc,qmlc,so.*} m,
+  /usr/lib/**.{so,jsc,qmlc,so.*} m,
+
   # on screen keyboard (OSK)
   dbus (send)
        bus=session
@@ -220,9 +225,10 @@
   /usr/lib/qt5/bin/qmlscene ixr,
 
   #
-  # Compiled QML files from the system should always be executable
+  # Applications can always try to load Qt's translations
   #
-  /usr/lib/@{multiarch}/qt5/qml/**/*.qmlc m,
+  /usr/share/qt5/translations/ r,
+  /usr/share/qt5/translations/** r,
 
   owner @{HOME}/.config/{UITK,ubuntu-ui-toolkit}/theme.ini rk,
   audit deny @{HOME}/.config/{UITK,ubuntu-ui-toolkit}/theme.ini w,
