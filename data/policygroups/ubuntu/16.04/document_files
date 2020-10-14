@@ -4,10 +4,10 @@
 #  access document files instead.
 # Usage: reserved
 owner @{HOME}/Documents/   r,
-owner @{HOME}/Documents/** rwk,
+owner @{HOME}/Documents/** rwkl,
 # SD card: /media/<user>/<label>/...
 owner /media/*/*/[Dd][Oo][Cc][Uu][Mm][Ee][Nn][Tt][Ss]/   r,
-owner /media/*/*/[Dd][Oo][Cc][Uu][Mm][Ee][Nn][Tt][Ss]/** rwk,
+owner /media/*/*/[Dd][Oo][Cc][Uu][Mm][Ee][Nn][Tt][Ss]/** rwkl,
 # LP: #1408772. Temporarily allow read to user directory in SD card to obtain
 # the label of the SD card (don't use owner because this directory is owned by
 # root).

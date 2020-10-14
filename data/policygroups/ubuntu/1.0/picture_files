@@ -4,10 +4,10 @@
 #  API to access picture files instead.
 # Usage: reserved
 owner @{HOME}/Pictures/   r,
-owner @{HOME}/Pictures/** rwk,
+owner @{HOME}/Pictures/** rwkl,
 # SD card: /media/<user>/<label>/...
 owner /media/*/*/[Pp][Ii][Cc][Tt][Uu][Rr][Ee][Ss]/   r,
-owner /media/*/*/[Pp][Ii][Cc][Tt][Uu][Rr][Ee][Ss]/** rwk,
+owner /media/*/*/[Pp][Ii][Cc][Tt][Uu][Rr][Ee][Ss]/** rwkl,
 # LP: #1408772. Temporarily allow read to user directory in SD card to obtain
 # the label of the SD card (don't use owner because this directory is owned by
 # root).
