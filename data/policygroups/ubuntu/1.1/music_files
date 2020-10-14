@@ -4,10 +4,10 @@
 #  access music files instead.
 # Usage: reserved
 owner @{HOME}/Music/   r,
-owner @{HOME}/Music/** rwk,
+owner @{HOME}/Music/** rwkl,
 # SD card: /media/<user>/<label>/...
 owner /media/*/*/[Mm][Uu][Ss][Ii][Cc]/   r,
-owner /media/*/*/[Mm][Uu][Ss][Ii][Cc]/** rwk,
+owner /media/*/*/[Mm][Uu][Ss][Ii][Cc]/** rwkl,
 # LP: #1408772. Temporarily allow read to user directory in SD card to obtain
 # the label of the SD card (don't use owner because this directory is owned by
 # root).

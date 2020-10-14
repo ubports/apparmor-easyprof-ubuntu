@@ -4,10 +4,10 @@
 #  access video files instead.
 # Usage: reserved
 owner @{HOME}/Videos/   r,
-owner @{HOME}/Videos/** rwk,
+owner @{HOME}/Videos/** rwkl,
 # SD card: /media/<user>/<label>/...
 owner /media/*/*/[Vv][Ii][Dd][Ee][Oo][Ss]/   r,
-owner /media/*/*/[Vv][Ii][Dd][Ee][Oo][Ss]/** rwk,
+owner /media/*/*/[Vv][Ii][Dd][Ee][Oo][Ss]/** rwkl,
 # LP: #1408772. Temporarily allow read to user directory in SD card to obtain
 # the label of the SD card (don't use owner because this directory is owned by
 # root).
