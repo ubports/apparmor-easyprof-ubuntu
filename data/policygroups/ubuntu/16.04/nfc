@@ -1,0 +1,19 @@
+# Description: Can access NFC
+# Usage: common
+
+dbus (receive, send)
+    bus=system
+    peer=(name="org.neard{,.*}", label=unconfined),
+
+dbus (receive)
+    bus=system
+    path=/**
+    peer=(name="org.neard{,.*}", label=unconfined),
+
+dbus (receive)
+    bus=system
+    path=/
+    interface="org.freedesktop.DBus.{ObjectManager,Properties}"
+    member="{InterfacesAdded,InterfacesRemoved}"
+    peer=(label=unconfined),
+
