@@ -14,7 +14,7 @@
 
 ###VAR###
 
-###PROFILEATTACH### (attach_disconnected) {
+###PROFILEATTACH### (attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
   #include <abstractions/fonts>
   # Temporary fix until LP: #1278702 is fixed in apparmor fonts abstraction

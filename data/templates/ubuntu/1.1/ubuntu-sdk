@@ -14,7 +14,7 @@
 
 ###VAR###
 
-###PROFILEATTACH### (attach_disconnected) {
+###PROFILEATTACH### (attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
   #include <abstractions/fonts>
   #include <abstractions/X>
