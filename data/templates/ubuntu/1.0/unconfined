@@ -17,7 +17,7 @@
 # ###PROFILEATTACH### (unconfined) {}
 
 # v2 compatible wildly permissive profile
-###PROFILEATTACH### (attach_disconnected) {
+###PROFILEATTACH### (attach_disconnected,mediate_deleted) {
   capability,
   network,
   / rwkl,
