@@ -361,7 +361,7 @@
   /sys/class/timed_output/vibrator/enable rw,
   /sys/devices/virtual/timed_output/vibrator/enable rw,
   dbus (send)
-       bus=session
+       bus=system
        path=/com/lomiri/hfd
        interface=com.lomiri.hfd.Vibrator
        peer=(label=unconfined),
