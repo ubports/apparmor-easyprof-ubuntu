@@ -103,3 +103,7 @@ deny dbus (receive, send)
 deny dbus (receive, send)
      bus=system
      interface="org.ofono.Manager",
+
+# Qt 5.11 and up uses AF_NETLINK datagram sockets directly for most
+# QNetworkInterface tasks.
+network netlink dgram,
